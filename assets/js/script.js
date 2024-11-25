@@ -11,17 +11,19 @@ document.addEventListener("DOMContentLoaded", function(){
             } else {
                 let gameType = this.getAttribute("data-type");
                 runGame(gameType);
+                }
             }
-        })
+        });
     }
 
     document.getElementById("answer-box").addEventListener("keydown", function(event){
         if (event.key === "Enter"){
             checkAnswer();
-    })
+        }
+    });
 
     runGame("addition");
-})
+});
 /**
  * The main game "loop", called when the script is first loaded
  * and after the user's answer has been processed
