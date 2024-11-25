@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
-        button.addEventListener("click", function(){
+        button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
             } else {
@@ -144,6 +144,7 @@ function displayMultiplyQuestion(operand1, operand2) {
 
 }
 
+// Add your division question here
 function displayDivisionQuestion(operand1, operand2) {
     operand1 = operand1 * operand2;
     document.getElementById("operand1").textContent = operand1;
